@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+  content="ie=edge">
+  <title>PayPal Node App</title>
+</head>
+
+<body>
+  <h1>Katie's Store</h1>
+
+
+  <form action = "/pay" method="post">
+    <h2>hat</h2>
+    <h3>Top o' the morning Hat</h3>
+    <p>Qty:</p><input type="number" min="0" step="1" name="qty" max="10">
+    <input type = "submit" value = "25.00" name="price">
+    <input type="hidden" value = "hat" name = "item">
+    <input type="hidden" value = "Top o the morning Hat" name = "description">
+  </form>
+
+
+  <form action = "/pay" method="post">
+    <h2>shoes</h2>
+    <h3>Cool Runnings</h3>
+    <p>Qty:</p><input type="number" min="0" step="1" name="qty" max="10">
+    <input type = "submit" value = "30.00" name="price">
+    <input type="hidden" value = "shoes" name = "item">
+    <input type="hidden" value = "Cool Runnings" name = "description">
+  </form>
+
+  <h2>shirt</h2>
+  <h3>Keep your shirt on</h3>
+  <form action = "/pay" method="post">
+    <p>Qty:</p><input type="number" min="0" step="1" name="qty" max="10">
+    <input type = "submit" value = "15.00" name="price">
+    <input type="hidden" value = "shirt" name = "item">
+    <input type="hidden" value = "Keep your shirt on" name = "description">
+  </form>
+
+
+</body>
+
+</html>
